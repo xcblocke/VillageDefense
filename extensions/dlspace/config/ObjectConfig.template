@@ -1,0 +1,8 @@
+import { ObjectConfig } from "./ObjectConfig"; 
+
+/* ${classDesc} */
+export interface I${className} {
+    ${props}
+}
+
+export const ${className}: I${className} = ObjectConfig.getObject("${json}");

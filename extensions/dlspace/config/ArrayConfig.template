@@ -1,0 +1,10 @@
+import { ArrayConfig } from "./ArrayConfig"; 
+
+/* ${classDesc} */
+export interface I${className} {
+    ${props}
+}
+
+class __${className}__ extends ArrayConfig<I${className}> {}
+
+export const ${className} = new __${className}__("${json}");

@@ -1,0 +1,49 @@
+{
+    "package_version": 2,
+    "version": "1.0.0",
+    "name": "dlspace",
+    "description": "扩展",
+    "main": "./dist/main.js",
+    "devDependencies": {
+        "@types/node": "^16.0.1",
+        "typescript": "^4.9.5",
+        "prettier": "^3.4.2"
+    },
+    "author": "aliang",
+    "editor": ">=3.7.4",
+    "scripts": {
+        "build": "tsc -b",
+        "watch": "tsc -w"
+    },
+    "contributions": {
+        "menu": [
+            {
+                "path": "i18n:menu.extension",
+                "label": "导表",
+                "message": "export-config"
+            },
+            {
+                "path": "i18n:menu.extension",
+                "label": "导文字",
+                "message": "extract-text"
+            }
+        ],
+        "messages": {
+            "export-config": {
+                "methods": [
+                    "exportConfig"
+                ]
+            },
+            "extract-text": {
+                "methods": [
+                    "extractText"
+                ]
+            }
+        }
+    },
+    "dependencies": {
+        "fs-extra": "^11.2.0",
+        "path": "^0.12.7",
+        "xlsx": "^0.18.5"
+    }
+}
